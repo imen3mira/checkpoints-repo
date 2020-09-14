@@ -1,0 +1,11 @@
+FUNCTION MaxBST(root: ^BST) : INTEGER
+
+BEGIN
+    IF (root <> null) THEN
+       IF (root^.RC==null)
+         RETURN root^.VAL ;
+    else 
+        RETURN MaxBST(root^.RC);
+        END IF
+    END IF    
+END

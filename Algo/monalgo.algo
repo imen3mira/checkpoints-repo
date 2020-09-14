@@ -1,0 +1,25 @@
+
+
+ALGORITHM monalgorithm
+VAR
+    i :INTEGER:=0;
+    carac :CHAR;
+    nbmot :INTEGER: =0;
+    nbvoyelle :INTEGER: =0;
+    longueur : INTEGER: =0;
+BEGIN
+   WHILE (carac <> '.') DO
+        IF (carac=' ') THEN
+         nbmot=nbmot+1;
+        END_IF
+        IF (carac='a' OU carac='A' OU carac='e' OU carac='E' OU carac='u' OU carac='U'OU carac='o' OU carac='O'OU carac='I' OU carac='i' ) THEN
+            nbvoyelle ++ ;
+        END_IF 
+    longueur ++ ;     
+   END_WHILE
+
+   write (nbmot);
+   write (nbvoyelle);
+   write (longueur +1);
+    
+END

@@ -1,0 +1,10 @@
+FUNCTION height(root: ^BST) : INTEGER
+VAR
+    nb : INTEGER :=0 ;
+BEGIN
+    IF (root == null) THEN
+         RETURN 0 ;
+    else 
+    nb =1 + max (height(root^.LC) , height(root^.RC));
+    RETURN nb ;
+END

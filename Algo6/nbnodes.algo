@@ -1,0 +1,10 @@
+FUNCTION nbNodes(root: ^BST) : INTEGER
+VAR
+    nb : INTEGER :=0 ;
+BEGIN
+    IF (root == null) THEN
+         RETURN 0 ;
+    else 
+    nb =1 + nbNodes(root^.LC) + nbNodes(root^.RC);
+    RETURN nb ;
+END

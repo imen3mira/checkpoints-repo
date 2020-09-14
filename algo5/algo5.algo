@@ -1,0 +1,31 @@
+FUNCTION palindrome(s: STRING) : BOOLEAN
+VAR
+  palindrome :BOOLEAN;
+BEGIN
+  IF (length(s) < 2) THEN
+     palindrome := true
+  ELSE
+       IF (s[1] = s[length(s)]) THEN
+         palindrome := palindrome(copy(s, 2, length(s) - 2))
+       ELSE
+         palindrome := false;
+       END_IF
+  END_IF
+  RETURN value ;
+END
+
+
+
+ALGORITHM Is-palindrome
+VAR
+  str: STRING[50];
+BEGIN
+  write("donnez une chaine de caractere")
+  read (str);
+
+  IF (palindrome(str)== true) THEN
+     write(" c est une chaine palindrome")
+  ELSE
+     write(" ce n est pas une chaine palindrome")
+  END_IF
+END

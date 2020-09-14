@@ -1,0 +1,13 @@
+FUNCTION NbLeaves(root: ^BST) : INTEGER
+    
+BEGIN
+    IF (root == null) THEN
+         RETURN 0 ;
+     else  IF (root^.LC == null && root^.RC == null) THEN
+              RETURN 1 ;
+            else
+             RETURN  (NbLeaves(root^.LC) + NbLeaves(root^.RC));
+           
+
+   
+END

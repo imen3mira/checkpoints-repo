@@ -1,0 +1,255 @@
+
+.menu{
+    display: flex;
+    background-color: rgb(240, 102, 10);
+    height:70px ;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+       color: white;
+
+      
+}
+.imgacceuil{
+    margin-top: 2cm;
+    align-items: center;
+    margin-left: 10cm;
+
+
+}
+.titremenu{
+    font-size: 30px;
+    margin: 0.5cm;
+    font-weight: bold;
+}
+.listmenu{
+    display: flex;
+    justify-content: center;
+     list-style-type: none;
+}
+.listmenu > li >a {
+    
+    color: white;
+  margin: 0 20px;
+  font-weight: 600;
+  text-decoration: none;
+ 
+}
+.listmenu > li > a:hover {
+  border-bottom: 5px solid rgba(58, 7, 7);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+@media (max-width:700px) {
+    
+    
+    .listmenu {
+      display: flex;
+      flex-direction: column;
+    }
+    .montre{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .imgacceuil{
+        margin-top: 2cm;
+        margin-left: 10cm;
+        height: 100px;
+        width: 200px;
+        align-items: center;
+    align-items: center;
+    margin-top: 2cm;
+    margin-left: 1cm;
+    }
+  }
+  .article1.image{
+      margin: 0.5cm;
+      align-items: center;
+
+  }
+  .article1.h3{
+      font-size: 30px;
+  }
+  .article1{
+    background : grey;
+      font-style: italic;
+      border-radius: 15px;
+      text-align: center;
+      padding: 1cm;
+      margin: 0.5cm;
+  }
+  .article2{
+    background : grey;
+      font-style: italic;
+      border-radius: 15px;
+      text-align: center;
+      padding: 1cm;
+      margin: 0.5cm;
+      
+  }
+  .article3{
+    background : grey;
+      font-style: italic;
+      border-radius: 15px;
+      text-align: center;
+      padding: 1cm;
+      margin: 0.5cm;
+      
+  }
+  .article4{
+    background : grey;
+      font-style: italic;
+      border-radius: 15px;
+      text-align: center;
+      padding: 1cm;
+      margin: 0.5cm;
+      
+  }
+  .article5{
+    background : grey;
+      font-style: italic;
+      border-radius: 15px;
+      text-align: center;
+      padding: 1cm;
+      margin: 0.5cm;
+      
+  }
+  .montre{
+      display: flex;
+    
+  }
+ 
+  footer{
+ 
+    font-family: Verdana, Geneva, sans-serif;
+   font-size: 0.7em;
+   font-weight: bold;
+   color: #FFF;
+   background-color:rgb(240, 102, 10);
+   padding: 10px;
+   margin: 20px;
+   height: auto;
+   width: 100%; 
+  }
+ 
+/*----------------------cart page-------------------*/
+.infosproduit{
+  display: grid;
+  grid-template-columns: 3.5fr 1.5fr 1.5fr 1.5fr ; 
+   margin: 0 auto;
+  margin-top: 2cm;
+  max-width: 900px;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightslategray;
+  width: 100%;
+  height: 50px;
+}
+.titre_produit{
+  width: 45%;
+  align-items: center;
+}
+.prix_produit{
+  width: 20%;
+  align-items: center;
+}
+.quantite_produit{
+  width: 20%;
+  align-items: center;
+}
+.total_produit{
+  width: 20%;
+  align-items: flex-end;
+}
+/*-----------------------------------------*/
+  .product > img{
+    width: 100px;
+    height: 150px;
+    
+  }
+  .product{
+ display: inline-flex;
+
+   align-items: center;
+   max-width: 400;
+   margin-left: 2cm;
+  }
+  .price{
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+  }
+  .total{
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  .product ion-icon{
+    font-size: 25px;
+    color: blue;
+    cursor: pointer;
+    
+  }
+  .quantity{
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+  }
+  .quantity ion-icon{
+    font-size: 25px;
+    color: blue;
+    cursor: pointer;
+    margin: 0.5cm;
+    align-items: center;
+    margin-bottom: 1.5cm;
+  }
+  .product span {
+    
+    margin: 0.5cm;
+    align-items: center;
+    margin-bottom: 1.5cm;
+
+  }
+  .affichageproduit{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr ;
+    margin: 0 auto;
+
+    border-bottom: 4px solid gray;
+    max-width: 900px;
+    align-items: center;
+
+  }
+  .affichagettotal{
+    display: flex;
+justify-content: flex-end;
+margin-right: 3cm;
+  }
+  .ttotal{
+    margin-right: 1cm;
+    margin-left: 1cm;
+  }
+  button{
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #df6d03;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    button:hover {background-color: #c96507}
+    
+    button:active {
+      background-color: orange;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  

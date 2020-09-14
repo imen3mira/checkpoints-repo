@@ -1,0 +1,112 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgba(2, 2, 32, 0.685);
+  text-align: center;
+}
+.inputsearch{
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 0.5cm;
+}
+header{
+  font-size: 40px;
+  margin: 1cm;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+}
+
+/*--------------------------CSS AddMovie----------------------------*/
+
+.movie , .cartAdd{
+  background-color: rgba(170, 166, 166, 0.938);
+  height: 400px;
+  width: 300px;
+  padding: 0.5cm;
+  margin: 0.5cm;
+  border-radius: 10px;
+
+}
+.modalAdd{
+  
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  border-radius: 30px;
+  
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  padding: 0.5cm;
+}
+.modalAdd > div >button{
+  font-size: 20px;
+   border-radius: 30px;
+   width: 120px;
+   height: 50px;
+  color: azure;
+  background-color: black;
+  margin: auto;
+  margin-top: 1cm;
+
+}
+.movies{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.modalAdd > input {
+  width: 500px;
+  height: 60px;
+  margin: auto;
+}
+.modalAdd  >label{
+  font-size: 40px;
+  color : black;
+  font-style: oblique;
+
+  
+}
+.modalAdd > div >{
+  align-items: center;
+}
+
+/*--------------------------------Star---------------------------------------*/
+.star{
+  cursor: pointer;
+  transition: color 200ms;
+  
+}
+.inputStar{
+  display: none;
+}
+.buttonAdd{
+font-size: 200px;
+margin: auto;
+}
+.inputDe{
+  margin-left: 20px;
+}
+.inputTitre{
+  margin-left: 10px;
+}
+.titre{
+  size: 100px;
+  font-style: oblique;
+
+  
+}
+.titreAddMovie{
+  size: 50px;
+  color: azure;
+  font-family: fantasy;
+  font-size: 100px;
+  margin-bottom: 1cm;
+}
+
+
+

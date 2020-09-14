@@ -1,0 +1,19 @@
+  FUNCTION isFullTree(root: ^BST) : BOOLEAN
+  
+  BEGIN
+      IF (root ==NULL) THEN
+          RETURN true ;
+      END_IF
+      IF (root^.LC == NULL && (root^.RC == NULL ) THEN
+           RETURN true ;
+           ELSE
+           RETURN false ;
+      END_IF
+      
+      IF (root^.LC && root^.RC) THEN
+           return (isFullTree(root^.LC) && isFullTree(root^.RC));
+      END_IF
+  
+  END
+  
+  

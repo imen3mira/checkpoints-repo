@@ -1,0 +1,15 @@
+ALGORITHM InsertionSort
+VAR
+    tab : ARRAY_OF INTEGER[50];
+    i: INTEGER;
+    element :INTEGER;
+
+BEGIN
+i = tab.length -1  ;
+  WHILE (tab[i] < element && 0 <i) STEP i-- DO
+     tab[i+1] = tab[i];
+     tab[i]= element;
+  END_WHILE
+
+ 
+END
